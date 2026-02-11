@@ -32,3 +32,8 @@ if st.button("Predict"):
         st.success("✅ Ad is Clicked")
     else:
         st.error("❌ Ad is NOT Clicked")
+
+# Run Streamlit
+if __name__ == "__main__":
+    import os
+    os.system("streamlit run app.py --server.port 8080 --server.address 0.0.0.0 --server.headless true")
